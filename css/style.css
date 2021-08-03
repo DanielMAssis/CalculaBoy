@@ -1,4 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {margin: 0; padding: 0;}
 
-body, html {height: 100%; background-color: #10111a;}
-li {list-style: none;}
+body, html {height: 100%; background-color: #2a3369;}
+li {list-style: none; display: flex; align-items: center; justify-content: center;}
+
+main {
+    position: relative;
+    top: 10%;
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#screen {
+    width: 100%;
+    height: 25%;
+    color: #c7d1ff;
+    font-size: 35pt;
+    font-family: 'Bebas Neue', cursive;
+    border: none;
+    border-radius: 10px;
+    background-color: #13183c;
+    padding: 5%;
+}
+
+#keyboard {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2%;
+    background-color: #1c2248;
+    border-radius: 15px;
+    margin-top: 3%;
+    padding: 5%;
+}
+
+button {
+    width: 95%;
+    height: 60%;
+    border: none;
+    color: #13183c;
+    border-radius: 10px;
+    box-shadow: 0 2px #949cc0;
+    background-color: #c7d1ff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18pt;
+}
+button:active {transform: translateY(1px); box-shadow: 0 1px #949cc0;}
+#btn1 {grid-column-start: 1; grid-column-end: 3;}
+#btn2 {grid-column-start: 3; grid-column-end: 5;}
+#btnres {background-color: #dd3745; box-shadow: 0 2px #a52b35; color: #c7d1ff;}
+#btndel {background-color: #3c83d1; box-shadow: 0 2px #2a619b;}
+#btnres:active {box-shadow: 0 1px #a52b35;}
+#btndel:active {box-shadow: 0 1px #2a619b;}
+
+@media only all and (max-width: 900px){
+    main {
+        width: 90%;
+        height: 95%;
+        top: 10px;
+    }
+}
+@media only all and (max-height: 500px){
+    main {top: 2px;}
+    button {height: 95%; width: 70%;}
+    #keyboard {margin-top: 2px;}
+    li {padding-top: 4px;}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
+input:focus {outline: none;}
