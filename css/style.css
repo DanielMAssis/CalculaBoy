@@ -53,8 +53,8 @@ button {
 button:active {transform: translateY(1px); box-shadow: 0 1px #949cc0;}
 #btn1 {grid-column-start: 1; grid-column-end: 3;}
 #btn2 {grid-column-start: 3; grid-column-end: 5;}
-#btnres {background-color: #dd3745; box-shadow: 0 2px #a52b35; color: #c7d1ff;}
-#btndel {background-color: #3c83d1; box-shadow: 0 2px #2a619b;}
+#btnres {background-color: #dd3745; box-shadow: 0 2px #a52b35; color: #fff;}
+#btndel {background-color: #3c83d1; box-shadow: 0 2px #2a619b; color: #fff;}
 #btnres:active {box-shadow: 0 1px #a52b35;}
 #btndel:active {box-shadow: 0 1px #2a619b;}
 
