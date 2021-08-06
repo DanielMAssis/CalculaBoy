@@ -13,24 +13,24 @@
         <input type="number" id="screen">
 
         <ul id="keyboard">
-            <li><button value="7" onclick="">7</button></li>
-            <li><button value="8" onclick="">8</button></li>
-            <li><button value="9" onclick="">9</button></li>
-            <li><button id="btndel" value="" onclick="">⌫</button></li>
-            <li><button value="4" onclick="">4</button></li>
-            <li><button value="5" onclick="">5</button></li>
-            <li><button value="6" onclick="">6</button></li>
-            <li><button value="" onclick="">+</button></li>
-            <li><button value="1" onclick="">1</button></li>
-            <li><button value="2" onclick="">2</button></li>
-            <li><button value="3" onclick="">3</button></li>
-            <li><button value="" onclick="">-</button></li>
-            <li><button value="" onclick="">.</button></li>
-            <li><button value="0" onclick="">0</button></li>
-            <li><button value="" onclick="">/</button></li>
-            <li><button value="" onclick="">*</button></li>
-            <li id="btn1"><button id="btndel" value="" onclick="">C</button></li>
-            <li id="btn2"><button id="btnres" value="" onclick="">=</button></li>
+            <li><button value="7" onclick="keyb(this)">7</button></li>
+            <li><button value="8" onclick="keyb(this)">8</button></li>
+            <li><button value="9" onclick="keyb(this)">9</button></li>
+            <li><button id="btndel" value="" onclick="back()">⌫</button></li>
+            <li><button value="4" onclick="keyb(this)">4</button></li>
+            <li><button value="5" onclick="keyb(this)">5</button></li>
+            <li><button value="6" onclick="keyb(this)">6</button></li>
+            <li><button value="+" onclick="calc(this)">+</button></li>
+            <li><button value="1" onclick="keyb(this)">1</button></li>
+            <li><button value="2" onclick="keyb(this)">2</button></li>
+            <li><button value="3" onclick="keyb(this)">3</button></li>
+            <li><button value="-" onclick="calc(this)">-</button></li>
+            <li><button value="," onclick="">.</button></li>
+            <li><button value="0" onclick="keyb(this)">0</button></li>
+            <li><button value="/" onclick="calc(this)">/</button></li>
+            <li><button value="*" onclick="calc(this)">*</button></li>
+            <li id="btn1"><button id="btndel" value="" onclick="cleanScreen()">C</button></li>
+            <li id="btn2"><button id="btnres" value="" onclick="resultCalc()">=</button></li>
         </ul>
     </main>
 </body>
