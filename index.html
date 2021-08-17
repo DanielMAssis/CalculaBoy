@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <input type="number" id="screen">
+        <input type="text" id="screen" onkeydown="checkey(event)" onkeyup="keyinput(this)">
 
         <ul id="keyboard">
             <li><button value="7" onclick="keyb(this)">7</button></li>
@@ -25,7 +25,7 @@
             <li><button value="2" onclick="keyb(this)">2</button></li>
             <li><button value="3" onclick="keyb(this)">3</button></li>
             <li><button value="-" onclick="calc(this)">-</button></li>
-            <li><button value="," onclick="">.</button></li>
+            <li><button value="." onclick="keyb(this)">.</button></li>
             <li><button value="0" onclick="keyb(this)">0</button></li>
             <li><button value="/" onclick="calc(this)">/</button></li>
             <li><button value="*" onclick="calc(this)">*</button></li>
